@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slideshow-test</title>
+    <style>
+        body {
+            padding:0px;
+            margin:0px;
+        }
+        #slideshow > img {
+            position: absolute;
+            width:300px;
+        }
+        .slideshow-image {
+            position:absolute;
+            width:100%;
+            min-height:100%;
+            border:1px solid black;
+            background-size:cover;
+            transition-property: opacity;
+            transition-duration: 1s;
+        }
+
+        .dissolve {
+            opacity: 0;
+        }
+
+        .dissolve-first {
+            opacity:100;
+        }
+
+        button {
+            margin-top:500px;
+        }
+
+    </style>
+</head>
+<body onload="openFullscreen()">
+    <div class="test" id="slideshow">
+
+    </div>
+<script src="preload.js"></script>
+</body>
+
+</html>
