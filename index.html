@@ -7,11 +7,9 @@
         body {
             padding:0px;
             margin:0px;
+            background-color:#000;
         }
-        #slideshow > img {
-            position: absolute;
-            width:300px;
-        }
+
         .slideshow-image {
             position:absolute;
             width:100%;
@@ -19,27 +17,20 @@
             border:1px solid black;
             background-size:cover;
             transition-property: opacity;
-            transition-duration: 1s;
+            transition-duration: 2s;
         }
 
         .dissolve {
             opacity: 0;
         }
-
-        .dissolve-first {
-            opacity:100;
-        }
-
-        button {
-            margin-top:500px;
-        }
-
     </style>
 </head>
 <body onload="openFullscreen()">
+<div class="curtain">
     <div class="test" id="slideshow">
 
     </div>
+</div>
 <script src="preload.js"></script>
 </body>
 
